@@ -1,350 +1,91 @@
-
-body {
-	width: 1500px;
-	height: 100%;
-	background: url('../imag/Leaf.png');
-	/* background: #ECDB8A; */
-	overflow-x: hidden;
-
-	/* min-height: 100%;
-	min-width: 100%;
-	max-height: 100%;
-	max-width: 100%; */
-}
-main{
-	height: auto;
-	width: 1100px;
-}
-.shadow { /*блок с названием*/
-	background: #CA3F1A;
-	width: 1502px;
-	height: 200px;
-	border-radius: 20px;
-	text-align: center;
-}
-h1{ /*размер названия*/
-	text-align: center;
-	margin-top:-8px;
-	font-size: 70px;
-}
-.conteiner { /*контейнер меню*/
-	height: 75px;
-  width: 1300px;
-  margin-left: 100px;
-  margin-right: 100px;
-  margin-top: -40px;
-  border-radius: 20px;
-  background: #832320;
-}
-.nav_link { /*ссылки в меню*/
-	font-size: 50px;
-	color: black;
-	padding: 20px;
-}
-#Account{ /*аккаунт в меню*/
-	margin-left: 580px;
-}
-.FormFirst{ /*нижняя форма с информацией главного меню*/
-	margin: 30px;
-	background: #F2DA91;
-	width: 1200px;
-	height: 700px;
-	margin-left: 150px;
-	border-radius: 20px;
-}
-#AboutUs{ /*надпись "О нас"*/
-	font-size: 40px;
-	margin-left: 150px;
-	margin-top: 0px;
-	margin-bottom: 10px
-}
-.formFirst{ /*форма с информацией главного меню*/
-	background: #CAB34A;
-	width: 1000px;
-	border-radius: 20px;
-	margin-left: 250px;
-	margin: -35px 100PX;
-}
-p{ /*информация на главном меню*/
-	font-size: 35px;
-	text-indent: 90px;
-	line-height: 60px;
-	letter-spacing: 5px;
-	margin-left: 20px;
-	margin-right: 20px;
-}
-.imag2{ /*картинка лавочки*/
-	height: 700px;
-	width: 1000px;
-	margin-left: 640px;
-	margin-top: -544px;
-}
-#navigationLogo{/*логотип навигации*/
-	margin-left: 400px;
-	margin-bottom: -103px;
-	height: 50px;
-	width: 50px;
-	margin: -50px 60px;
-}
-#navigationMain{/*текст "Навигация"*/
-	font-size: 40px;
-	margin-left: 450px;
-	padding: 0px;
-	margin: 0px 110px;
-}
-.FormSecond{/*форма с информацией о навигации*/
-	background: #F2DA91;
-	width: 1000px;
-	border-radius: 20px;
-	margin-left: 250px;
-	margin-top: 30px;
-}
-#mymap{/*карта*/
-	margin: 0 auto;
-	border-width: 2px;
-}
-.Place{/*расположение radio кнопок и текста*/
-	margin:0px 0px 0px 60px;
-}
-.RadioLabel{/*текст возле radio кнопок*/
-	margin-left: -40px;
-	margin-top: -40px;
-	margin-bottom: -10px;
-	font-size: 25px;
-}
-.ButtonNav{/*div с кнопкой в навигации*/
-	padding: 30px;
-	margin-left: 380px;
-	margin-top: 10px;
-}
-#Reservation{/*форма при нажати кнопки*/
-	background: #CAB34A;
-	height: 200px;
-	width: 400px;
-	text-align: center;
-	border-radius: 20px;
-	display: none;
-	margin-top: -300px;
-	opacity: 0.99;
-	margin-left: 200px;
-}
-.ButtonAll{/*дизайн для всех кнопок*/
-	font-size: 15px;
-	border-radius: 10px;
-	border-width: 0px;
-	height: 40px;
-	width: 250px;
-}
-
-.ButtonAll:hover {
-	background-color: #832320;
-}
-
-.ButtonLocationOpenformReservation{/*расположение формы при нажатии на кнопку*/
-	margin-left: 300px;
-	margin-top: 100px;
-}
-
-  /* АВТОРИЗАЦИЯ */
-
-.avt { /*нижняя форма с информацией об авторизации*/
-	background: #F2DA91;
-	width: 800px;
-	height: 800px;
-	border-radius: 20px;
-	margin-left: 380px;
-	margin-top: 50px;
-}
-
-.Avt { /*форма с информацией авторизации*/
-	margin: 30px;
-	background: #CAB34A;
-	width: 600px;
-	height: 700px;
-	margin-left: 100px;
-	border-radius: 20px;
-}
-
-#Slovo { /* Наименование формы */
-	font-size: 40px;
-	margin-left: 100px;
-	margin-top: 10px;
-	margin-bottom: 20px;
-}
-
-span { /* Наименование  */
-	font-size: 40px;
-}
-
-.img3 { /* Автоарка пользователя */
-	height: 200px;
-	width: 200px;
-	margin-top: 50px;
-}
-
-#phone { /*Поле для ввода номера телефона*/
-   width: 260px;
-   height: 50px;
-   font-size: 30px;
-   border-radius: 20px;
-}
-
-#password { /*Поле для ввода пароля*/
-   width: 260px;
-   height: 50px;
-   font-size: 30px;
-   border-radius: 20px;
-}
-
-#submit { /* Кнопка отправить */
-	height: 50px;
-   width: 250px;
-   margin-top: 30px;
-   font-size: 20px;
-   font-weight: bold;
-   border-radius: 15px;
-}
-
-#submit:hover{
-   background-color: #832320;
-}
-
-.end { /* Помощь если нет аккаунта */
-	font-size: 20px;
-}
-
-/* Регистрация */
-.reg { /*нижняя форма с информацией о регистрации*/
-	background: #F2DA91;
-	width: 900px;
-	height: 900px;
-	border-radius: 20px;
-	margin-left: 350px;
-	margin-top: 50px;
-}
-
-.Reg { /*форма с информацией о регистрации*/
-	margin: 30px;
-	background: #CAB34A;
-	width: 800px;
-	height: 790px;
-	margin-left: 50px;
-	border-radius: 20px;
-}
-
-#Slava { /* Наименование формы */
-	font-size: 40px;
-	margin-left: 50px;
-	margin-top: 0px;
-	margin-bottom: 10px
-}
-
-.Regis { /*форма с информацией */
-	margin-left: 30px;
-	margin-top: 30px;
-	line-height: 80px;
-}
-
-#FIO{ /*Поле для ввода ФИО*/
-   width: 500px;
-   height: 50px;
-   font-size: 30px;
-   border-radius: 20px;
-}
-
-#Email{ /*Поле для ввода почты*/
-   width: 500px;
-   height: 50px;
-   font-size: 30px;
-   border-radius: 20px;
-}
-
-#cvv{ /*Поле для ввода cvv*/
-   width: 100px;
-   height: 50px;
-   font-size: 30px;
-   border-radius: 20px;
-}
-
-#card{ /*Поле для ввода карты*/
-   width: 300px;
-   height: 50px;
-   font-size: 30px;
-   border-radius: 20px;
-}
-
-#ps,#ps2{ /*Поле для ввода пароля и его повтора*/
-   width: 300px;
-   height: 50px;
-   font-size: 30px;
-   border-radius: 20px;
-}
-#expireMM,#expireYY { /*Поле для ввода срока*/
-	width: 150px;
-   height: 50px;
-   font-size: 30px;
-   border-radius: 20px;
-}
-
-.sogl{ /*Согласие на обработку данных*/
-   width: 40px;
-   height: 20px;
-   margin-left: 90px;
-}
-label{ /*Согласие на обработку данных*/
-   font-size: 25px;
-}
-#submite:hover{ /*Кнопка меняет цвет*/
-   background-color: #832320;
-}
-
-#submite{ /*Кнопка Создать аккаунт*/
-   height: 50px;
-   width: 250px;
-   margin-top: 30px;
-   font-size: 20px;
-   font-weight: bold;
-   border-radius: 20px;
-}
+<!DOCTYPE html>
+<html class="navigation">
+   <head>
+    <meta charset="utf-8">
+    <title>Лавочкин</title>
+      <link rel="shortcut icon" href="imag/icona.png">
+      <link rel="stylesheet" href="css/stile.css">
+      <div class="shadow">
+        <h1>Lавочкин</h1>
+      </div>
+      <header> <!-- меню -->
+        <div class="conteiner">
+           <div class="nav_item_active">
+               <a class="nav_link" href="Главная страница.html">Главная</a>
+               <a class="nav_link" href="Навигация.html">Навигация</a>
+               <a class="nav_link"id="Account" href="Авторизация.html">Аккаунт</a>
+           </div>
+        </div>
+      </header>
+   </head>
+  <body><!-- основная часть -->
+          <main> <!-- основной контент -->
+            <form class="reg" method="post">
+            <H3 id="Slava">Регистрация</H3>
+         <div class="Reg" method="post">
+           <div class="Regis">
+            <span>ФИО</span>
+            <input type="text" id="FIO" required><br>
+            <span>Почта</span>
+            <input placeholder="elldd@mail.ru" type="email" id="Email" ><br>
+            <span>Номер телефона</span>
+            <input type="tel" inputmode="numeric" id="phone" pattern="8 [0-9] {,11}" placeholder="+7 (***) *** ** **" required><br>
+            <span>Номер карты</span>
+            <input type="tel" inputmode="numeric" id="card" pattern="[0-9] {,16}" maxlength="16" placeholder="xxxx xxxx xxxx xxxx" required><br>
+                     <span>CVV</span> <input type="tel" id="cvv" inputmode="numeric" pattern="[0-9]{3}" maxlength="3" placeholder="xxx" required>
+                     <span>Срок</span> 
+                     <select name="expireMM" id="expireMM">
+                      <option value=''>Месяц</option>
+                      <option value='01'>01</option>
+                      <option value='02'>02</option>
+                      <option value='03'>03</option>
+                      <option value='04'>04</option>
+                      <option value='05'>05</option>
+                      <option value='06'>06</option>
+                      <option value='07'>07</option>
+                      <option value='08'>08</option>
+                      <option value='09'>09</option>
+                      <option value='10'>10</option>
+                      <option value='11'>11</option>
+                      <option value='12'>12</option>
+                  </select> 
+                  <select name="expireYY" id="expireYY">
+                      <option value=''>Год</option>
+                      <option value='22'>22</option>
+                      <option value='23'>23</option>
+                      <option value='24'>24</option>
+                      <option value='25'>25</option>
+                      <option value='26'>26</option>
+                      <option value='27'>27</option>
+                      <option value='28'>28</option>
+                      <option value='29'>29</option>
+                      <option value='30'>30</option>
+                  </select> <br>
+            <span>Пароль</span>
+            <input type="password" id="ps" required><br>
+            <span >Повтор пароля</span>
+            <input type="password" id="ps2" required><br>
+            <input type="checkbox" id="soglasie" class="sogl">
+            <label for="checkbox">Я согласен(а) на Обработку персональных данных</label>
+            <center><button id="submite">Создать аккаунт</button><br></center>
+               <script>
+               submit.onclick = function(){
+               if (soglasie.checked) { alert("Спасибо за согласие:)"); } else { alert("Подтвердите согласие"); }
+               }
+               </script>
+            </div>
+          </div>
+        </form>
+          </main>
+          <footer>  <!--подвал -->
+            <br><p class="Footer">Lавочкин@mail.com</p>
+            <br><p class="Footer">557(898)427-48-53</p>
+            <br><p class="Copyright" id="Copyrightcopy">Copyright & copy; 2022 Lавочкин</p>
+          </footer>
+     
+  <script src="ФормаБрони.js"></script>
+  </body>
+</html>
 
 
-#Reservation{
-
-	background: #CAB34A;;
-	height: 200px;
-	width: 400px;
-	text-align: center;
-	border-radius: 20px;
-display: none;
-	margin-top: -300px;
-	opacity: 0.99;
-	margin-left: 200px;
-
-}
-
-.posta {
-	height: 180px;
-	width: 380px;
-	background: #F2DA91;
-}
-
-footer {
-	background: #CA3F1A;
-	width: 100%;
-	height: 100px;
-	border-radius: 20px;
-	margin-top: 10px;
-}
-
-
-
-.Footer{ /*информация в подвале*/
-	font-size: 25px;
-	margin: -16px;
-}
-#Copyrightcopy{ /*Copyright в подвале*/
- margin-top: -60px;
- margin-left: 880px;
- font-size: 25px;
-}
 
