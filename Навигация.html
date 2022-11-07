@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html class="navigation">
+   <head>
+	  <meta charset="utf-8">
+	  <title>Лавочкин</title>
+      <link rel="shortcut icon" href="imag/icona.png">
+      <link rel="stylesheet" href="css/stile.css">
+      <div class="shadow">
+        <h1>Lавочкин</h1>
+      </div>
+      <header> <!-- меню -->
+        <div class="conteiner">
+           <div class="nav_item_active">
+               <a class="nav_link" href="Главная страница.html">Главная</a>
+               <a class="nav_link" href="Навигация.html">Навигация</a>
+               <a class="nav_link"id="Account" href="Авторизация.html">Аккаунт</a>
+           </div>
+        </div>
+      </header>
+   </head>
+   <body><!-- основная часть -->
+          <main> <!-- основной контент -->
+              <form class="FormSecond" method="post">
+                <img id="navigationLogo" src="imag/navigation.png" alt="В данный момент картинка недоступна">
+                <br><H3 id="navigationMain">Навигация</H3>
+                  <div id="mymap" style="margin-left: 9%; margin-top: 2%;">
+                      <iframe id="iframm" src="https://yandex.ru/map-widget/v1/?um=constructor%3A56bd5377048723f7694da6dc65fdf04e0fdfd1e7c136af22f52485b9872fb1fb&amp;source=constructor"
+                      width="770" height="416" style="border: 30px double Goldenrod; border-radius: 30px;"frameborder="1" ></iframe>
+                  </div>
+                  <br><form class="radio-batton" onsubmit="return false;">
+                    <div class="Place">
+                      <br><input type="radio" name="question" >
+                      <p class="RadioLabel" for="Park named after the 300th anniversary of the Russian police">Парк имени 300-летия полиции России</p>
+                      <br><input type="radio" name="question">
+                      <p class="RadioLabel" for="Sunny Boulevard">Солнечный бульвар</p>
+                      <br><input type="radio" name="question">
+                      <p class="RadioLabel" for="Chistyakovskaya grove">Чистяковская роща</p>
+                      <br><input type="radio" name="question">
+                      <p class="RadioLabel" for="Alexander Boulevard">Александровский бульвар</p>
+                      <br><input type="radio" name="question">
+                      <p class="RadioLabel" for="Park "Krasnodar"">Парк "Краснодар"</p>
+                      <br><input type="radio" name="question">
+                      <p class="RadioLabel" for="Square named after G.K. Zhukov">Сквер имени Г.К. Жукова</p>
+                    </div>
+                    <div class="ButtonNav">
+                      <button class="ButtonAll" onclick="openForm(); return false;">Забронировать</button>
+                    </div>
+                    <form method="post">
+                      <div id="Reservation">
+                        <button type="button" class="btn cancel" onclick="closeForm()">Закрыть</button>
+                        <br><label for="EnteryORRegistration">Для брони ввойдите в аккаунт или зарегистрируйтесь</label>
+                        <button class="ButtonAll ButtonLocationReservation1" >Авторизация</button>
+                        <button class="ButtonAll ButtonLocationReservation2">Регистрация</button>
+                      </div>
+                    </form>
+                  </form>
+              </form>
+
+          </main>
+          <footer>  <!--подвал -->
+          <br><p class="Footer">Lавочкин@mail.com</p>
+          <br><p class="Footer">557(898)427-48-53</p>
+          <br><p class="Copyright" id="Copyrightcopy">Copyright & copy; 2022 Lавочкин</p>
+        </footer>
+  <script src="ФормаБрони.js"></script>
+  </body>
+</html>
