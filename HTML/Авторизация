@@ -42,5 +42,7 @@
             <br><p class="Footer">557(898)427-48-53</p>
             <br><p class="Copyright" id="Copyrightcopy">Copyright & copy; 2022 Lавочкин</p>
           </footer>
+	  <script src="login.js"></script>
+          <script src="valid.js"></script>
    </body>
 </html>   
