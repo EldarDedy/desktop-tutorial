@@ -11,9 +11,9 @@
       <header> <!-- меню -->
         <div class="conteiner">
            <div class="nav_item_active">
-               <a class="nav_link" href="Главная страница.html">Главная</a>
-               <a class="nav_link" href="Навигация.html">Навигация</a>
-               <a class="nav_link"id="Account" href="Авторизация.html">Аккаунт</a>
+               <a class="nav_link" href="index.html">Главная</a>
+               <a class="nav_link" href="navigation.html">Навигация</a>
+               <span class="nav_link"id="Account" onclick="validateToken()" href="">Аккаунт</span>
            </div>
         </div>
       </header>
@@ -49,8 +49,8 @@
                       <div id="Reservation">
                         <button type="button" class="btn_cancel" onclick="closeForm()">Закрыть</button>
                         <br><label for="EnteryORRegistration">Для брони ввойдите в аккаунт или зарегистрируйтесь</label>
-                        <button class="ButtonAll ButtonLocationReservation1" ><a href="Авторизация.html">Авторизация</a></button>
-                        <button class="ButtonAll ButtonLocationReservation2"><a href="Регистрация.html">Регистрация</a></button>
+                        <button class="ButtonAll ButtonLocationReservation1" ><a href="auth.html">Авторизация</a></button>
+                        <button class="ButtonAll ButtonLocationReservation2"><a href="registration.html">Регистрация</a></button>
                       </div>
                     </form>
                   </form>
@@ -62,7 +62,7 @@
           <br><p class="Footer">557(898)427-48-53</p>
           <br><p class="Copyright" id="Copyrightcopy">Copyright & copy; 2022 Lавочкин</p>
         </footer>
-  <script src="ФормаБрони.js"></script>
+  <script src="form_register.js"></script>
+   <script src="valid.js"></script>
   </body>
 </html>
-
