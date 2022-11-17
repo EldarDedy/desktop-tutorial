@@ -11,9 +11,9 @@
       <header> <!-- меню -->
         <div class="conteiner">
            <div class="nav_item_active">
-               <a class="nav_link" href="Главная страница.html">Главная</a>
-               <a class="nav_link" href="Навигация.html">Навигация</a>
-               <a class="nav_link"id="Account" href="Авторизация.html">Аккаунт</a>
+               <a class="nav_link" href="index.html">Главная</a>
+               <a class="nav_link" href="navigation.html">Навигация</a>
+               <span class="nav_link"id="Account" onclick="validateToken()" href="">Аккаунт</span>
            </div>
         </div>
       </header>
@@ -25,9 +25,9 @@
               <div class="formFirst">
                 <p>Мы сеть бронирования лавочек с навесом. Наши лавочки расположены по периметру города Краснодар. Бронировать можно в любое время, а также в любую погоду.</p>
                 <p>Сеть с уникальной возможностью и неповторимым антуражем.</p>
-                <p>Lавочкин – сайт для доступной <br>и удобной брони.</p>
+                <p>Lавочкин – сайт для доступной <br>и удобной брони.<br>1й месяц работы сайта бронь бесплатная!</p>
               </div>
-              <img class="imag2" src="imag/Лавочка2.png">
+              <img class="imag2" src="imag/lavochka.png">
             </form>
           </main>
           <footer>  <!--подвал -->
@@ -35,7 +35,8 @@
             <br><p class="Footer">557(898)427-48-53</p>
             <br><p class="Copyright" id="Copyrightcopy">Copyright & copy; 2022 Lавочкин</p>
           </footer>
-     
-  <script src="ФормаБрони.js"></script>
+
+  <script src="register_form.js"></script>
+  <script src="valid.js"></script>
   </body>
 </html>
