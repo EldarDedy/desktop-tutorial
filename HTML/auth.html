@@ -11,28 +11,28 @@
       <header> <!-- меню -->
         <div class="conteiner">
            <div class="nav_item_active">
-               <a class="nav_link" href="Главная страница.html">Главная</a>
-               <a class="nav_link" href="Навигация.html">Навигация</a>
-               <a class="nav_link"id="Account" href="Авторизация.html">Аккаунт</a>
+               <a class="nav_link" href="index.html">Главная</a>
+               <a class="nav_link" href="navigation.html">Навигация</a>
+               <span class="nav_link"id="Account" onclick="validateToken()" href="">Аккаунт</span>
            </div>
         </div>
       </header>
    </head>
    <body><!-- основная часть -->
        <main> <!-- основной контент -->
-        <form class="avt" method="post">
+        <form class="avt" method="post" onsubmit="logInSys(); return false;">
           <H3 id="Slovo">Авторизация</H3>
           <div class="Avt">
               <center>
-                   <img class="img3" src="imag/аватар.png"> <br>
+                   <img class="img3" src="imag/user.png"> <br>
                  <span>Номер телефона</span>
-                 <br> <input type="tel" inputmode="numeric" id="phone" pattern="([0-9]){3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="+7 (***) *** ** ** " required><br><br>
+                 <br> <input type="tel" inputmode="numeric" id="phone" pattern="\+?[0-9\s\-\(\)]+" placeholder="+7 (***) *** ** ** " required><br><br>
                  <span>Пароль</span><br>
                  <input id="password" type="password" id="ps"><br><br> 
                  <div class="end">
-                    Нет аккаунта? <a href="Регистрация.html">Регистрация</a>
+                    Нет аккаунта? <a href="registration.html">Регистрация</a>
                  </div>
-                 <button type="submit" id="submit">Войти</button>           
+                 <button type="submit" id="submit" >Войти</button>
               </center>
           </div>
       </form>
@@ -42,7 +42,7 @@
             <br><p class="Footer">557(898)427-48-53</p>
             <br><p class="Copyright" id="Copyrightcopy">Copyright & copy; 2022 Lавочкин</p>
           </footer>
-	  <script src="login.js"></script>
-          <script src="valid.js"></script>
+   <script src="login.js"></script>
+   <script src="valid.js"></script>
    </body>
 </html>   
