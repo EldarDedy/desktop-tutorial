@@ -11,29 +11,29 @@
       <header> <!-- меню -->
         <div class="conteiner">
            <div class="nav_item_active">
-               <a class="nav_link" href="Главная страница.html">Главная</a>
-               <a class="nav_link" href="Навигация.html">Навигация</a>
-               <a class="nav_link"id="Account" href="Авторизация.html">Аккаунт</a>
+               <a class="nav_link" href="index.html">Главная</a>
+               <a class="nav_link" href="navigation.html">Навигация</a>
+               <span class="nav_link"id="Account" onclick="validateToken()">Аккаунт</span>
            </div>
         </div>
       </header>
    </head>
   <body><!-- основная часть -->
           <main> <!-- основной контент -->
-            <form class="reg" method="post">
+            <form class="reg" onsubmit="submitRegister(); return false;">
             <H3 id="Slava">Регистрация</H3>
-         <div class="Reg" method="post">
+         <div class="Reg">
            <div class="Regis">
-            <span>ФИО</span>
-            <input type="text" id="FIO" required><br>
-            <span>Почта</span>
+            <span>ФИО *</span>
+            <input type="text" id="FIO" pattern='^[А-Яа-яЁё\s]+$' required><br>
+            <span>Почта *</span>
             <input placeholder="elldd@mail.ru" type="email" id="Email" ><br>
-            <span>Номер телефона</span>
-            <input type="tel" inputmode="numeric" id="phone" pattern="8 [0-9] {,11}" placeholder="+7 (***) *** ** **" required><br>
+            <span>Номер телефона *</span>
+            <input type="tel" inputmode="numeric" id="phone" pattern="7\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="7(***)***-**-**" required><br>
             <span>Номер карты</span>
-            <input type="tel" inputmode="numeric" id="card" pattern="[0-9] {,16}" maxlength="16" placeholder="xxxx xxxx xxxx xxxx" required><br>
-                     <span>CVV</span> <input type="tel" id="cvv" inputmode="numeric" pattern="[0-9]{3}" maxlength="3" placeholder="xxx" required>
-                     <span>Срок</span> 
+            <input type="tel" inputmode="numeric" id="card" pattern="[0-9] {,16}" maxlength="16" placeholder="xxxx xxxx xxxx xxxx"><br>
+                     <span>CVV</span> <input type="tel" id="cvv" inputmode="numeric" pattern="[0-9]{3}" maxlength="3" placeholder="xxx">
+                     <span>Срок</span>
                      <select name="expireMM" id="expireMM">
                       <option value=''>Месяц</option>
                       <option value='01'>01</option>
@@ -48,7 +48,7 @@
                       <option value='10'>10</option>
                       <option value='11'>11</option>
                       <option value='12'>12</option>
-                  </select> 
+                  </select>
                   <select name="expireYY" id="expireYY">
                       <option value=''>Год</option>
                       <option value='22'>22</option>
@@ -61,17 +61,14 @@
                       <option value='29'>29</option>
                       <option value='30'>30</option>
                   </select> <br>
-            <span>Пароль</span>
+            <span>Пароль *</span>
             <input type="password" id="ps" required><br>
-            <span >Повтор пароля</span>
+            <span >Повтор пароля *</span>
             <input type="password" id="ps2" required><br>
-            <input type="checkbox" id="soglasie" class="sogl">
+            <input type="checkbox" id="soglasie" class="sogl" required>
             <label for="checkbox">Я согласен(а) на Обработку персональных данных</label>
             <center><button id="submite">Создать аккаунт</button><br></center>
                <script>
-               submit.onclick = function(){
-               if (soglasie.checked) { alert("Спасибо за согласие:)"); } else { alert("Подтвердите согласие"); }
-               }
                </script>
             </div>
           </div>
@@ -82,10 +79,8 @@
             <br><p class="Footer">557(898)427-48-53</p>
             <br><p class="Copyright" id="Copyrightcopy">Copyright & copy; 2022 Lавочкин</p>
           </footer>
-     
-  <script src="ФормаБрони.js"></script>
+
+  <script src="form_register.js"></script>
+  <script src="valid.js"></script>
   </body>
 </html>
-
-
-
