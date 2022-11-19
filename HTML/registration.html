@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html class="navigation">
+   <head>
+    <meta charset="utf-8">
+    <title>Лавочкин</title>
+      <link rel="shortcut icon" href="imag/icona.png">
+      <link rel="stylesheet" href="css/stile.css">
+      <div class="shadow">
+        <h1>Lавочкин</h1>
+      </div>
+      <header> <!-- меню -->
+        <div class="conteiner">
+           <div class="nav_item_active">
+               <a class="nav_link" href="index.html">Главная</a>
+               <a class="nav_link" href="navigation.html">Навигация</a>
+               <span class="nav_link"id="Account" onclick="validateToken()">Аккаунт</span>
+           </div>
+        </div>
+      </header>
+   </head>
+  <body><!-- основная часть -->
+          <main> <!-- основной контент -->
+            <form class="reg" onsubmit="submitRegister(); return false;">
+            <H3 id="Slava">Регистрация</H3>
+         <div class="Reg">
+           <div class="Regis">
+            <span>ФИО *</span>
+            <input type="text" id="FIO" pattern='^[А-Яа-яЁё\s]+$' required><br>
+            <span>Почта *</span>
+            <input placeholder="elldd@mail.ru" type="email" id="Email" ><br>
+            <span>Номер телефона *</span>
+            <input type="tel" inputmode="numeric" id="phone" pattern="7\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="7(***)***-**-**" required><br>
+            <span>Номер карты</span>
+            <input type="tel" inputmode="numeric" id="card" pattern="[0-9] {,16}" maxlength="16" placeholder="xxxx xxxx xxxx xxxx"><br>
+                     <span>CVV</span> <input type="tel" id="cvv" inputmode="numeric" pattern="[0-9]{3}" maxlength="3" placeholder="xxx">
+                     <span>Срок</span>
+                     <select name="expireMM" id="expireMM">
+                      <option value=''>Месяц</option>
+                      <option value='01'>01</option>
+                      <option value='02'>02</option>
+                      <option value='03'>03</option>
+                      <option value='04'>04</option>
+                      <option value='05'>05</option>
+                      <option value='06'>06</option>
+                      <option value='07'>07</option>
+                      <option value='08'>08</option>
+                      <option value='09'>09</option>
+                      <option value='10'>10</option>
+                      <option value='11'>11</option>
+                      <option value='12'>12</option>
+                  </select>
+                  <select name="expireYY" id="expireYY">
+                      <option value=''>Год</option>
+                      <option value='22'>22</option>
+                      <option value='23'>23</option>
+                      <option value='24'>24</option>
+                      <option value='25'>25</option>
+                      <option value='26'>26</option>
+                      <option value='27'>27</option>
+                      <option value='28'>28</option>
+                      <option value='29'>29</option>
+                      <option value='30'>30</option>
+                  </select> <br>
+            <span>Пароль *</span>
+            <input type="password" id="ps" required><br>
+            <span >Повтор пароля *</span>
+            <input type="password" id="ps2" required><br>
+            <input type="checkbox" id="soglasie" class="sogl" required>
+            <label for="checkbox">Я согласен(а) на Обработку персональных данных</label>
+            <center><button id="submite">Создать аккаунт</button><br></center>
+               <script>
+               </script>
+            </div>
+          </div>
+        </form>
+          </main>
+          <footer>  <!--подвал -->
+            <br><p class="Footer">Lавочкин@mail.com</p>
+            <br><p class="Footer">557(898)427-48-53</p>
+            <br><p class="Copyright" id="Copyrightcopy">Copyright & copy; 2022 Lавочкин</p>
+          </footer>
+     
+
+  <script src="form_register.js"></script>
+  <script src="valid.js"></script>
+  </body>
+</html>
